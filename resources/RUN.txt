@@ -1,6 +1,3 @@
-// TODO: For every project run your program.
-//       Then copy and paste the output in a file titled RUN under resources folder. 
-
 The list of groceries has 8 items.
 Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
@@ -8,24 +5,35 @@ Groceries wanted:
 Enter your budget:
 0
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 0 ms : 944200 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 470800 ns
 Purchased grocery prices are:
 []
 Done with ShoppingBag.
--------------------------------------------------
+--------------------------------------------------
 The list of groceries has 8 items.
 Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
 
 Enter your budget:
-2.50
+7
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 299400 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 724500 ns
 Purchased grocery prices are:
-[2.5]
+[7.0]
 Done with ShoppingBag.
----------------------------------------------------
+--------------------------------------------------
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
 
+Enter your budget:
+20
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 809900 ns
+Purchased grocery prices are:
+[2.5, 4.0, 7.0, 6.0]
+Done with ShoppingBag.
+--------------------------------------------------
 The list of groceries has 8 items.
 Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
@@ -33,19 +41,19 @@ Groceries wanted:
 Enter your budget:
 58
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 440500 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 332900 ns
 Purchased grocery prices are:
-[2.5, 4.0, 4.0, 11.5, 11.5, 11.5, 7.0, 7.0, 7.0, 7.0, 15.0, 15.0, 15.0, 15.0, 15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0]
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 8.0]
 Done with ShoppingBag.
-----------------------------------------------------
+--------------------------------------------------
 The list of groceries has 8 items.
 Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
 
 Enter your budget:
-1000
+100
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 470700 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 2 ms : 354900 ns
 Purchased grocery prices are:
-[2.5, 4.0, 4.0, 11.5, 11.5, 11.5, 7.0, 7.0, 7.0, 7.0, 15.0, 15.0, 15.0, 15.0, 15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0]
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
 Done with ShoppingBag.
