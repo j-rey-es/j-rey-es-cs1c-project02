@@ -5,48 +5,42 @@ import java.util.ArrayList;
 public class SubsetSum {
     public static ArrayList<Double> findSubset(ArrayList<Double> set, double limit)
     {
-        ArrayList<ArrayList<Double>> col = new ArrayList<ArrayList<Double>>();
-        ArrayList<Double> empty = new ArrayList<Double>();
-        ArrayList<Double> lAdd = new ArrayList<Double>();
-        ArrayList<Double> lPrime = new ArrayList<Double>();
+        ArrayList<Sublist> col = new ArrayList<Sublist>();
+        ArrayList<Double> purchases = new ArrayList<Double>();
+        Sublist listAdd = new Sublist(set);
+        Sublist lPrime = new Sublist(set);
         double largest = 0 ;
         int largestIndex = 0;
-        col.add(empty);
+        /*ArrayList<Double> lAdd = new ArrayList<Double>(); */
+        col.add(listAdd);
         for (int i = 0; i < set.size(); i++)
         {
             for (int j = 0; j < col.size(); j++)
             {
-                if(sumArrayList(col.get(j)) +set.get(i) < limit)
+                if(col.get(j).addItem(i).getSum() < limit)
                 {
-                    lAdd = col.get(j);
-                    lAdd.add(set.get(i));
-
+                    lPrime = (col.get(j).addItem(i));
                 }
-                if(sumArrayList(col.get(j)) +set.get(i) == limit)
+                if(listAdd.addItem(i).getSum() == limit)
                 {
-                    lAdd = col.get(j);
-                    lAdd.add(set.get(i));
-                    lPrime =lAdd;
+                    lPrime = col.get(j).addItem(i);
                     break;
                 }
+
             }
-            col.add(lAdd);
+            col.add(lPrime);
         }
         for (int k = 0; k<col.size(); k++)
         {
-            if (sumArrayList(col.get(k)) > largest)
+            if (col.get(k).getSum() > largest)
             {
-                largest = sumArrayList(col.get(k));
+                largest = col.get(k).getSum();
                 largestIndex = k;
             }
         }
-        return col.get(largestIndex);
-    }
-    public static double sumArrayList(ArrayList<Double> set)
-    {
-        double sum = 0;
-        for (int i = 0; i > set.size(); i++)
-            sum =+set.get(i);
-        return sum;
+        for (int l = 0; l <col.get(largestIndex).indices.size(); l++)
+            purchases.add(set.get(col.get(largestIndex).indices.get(l)));
+        return purchases;
     }
 }
+

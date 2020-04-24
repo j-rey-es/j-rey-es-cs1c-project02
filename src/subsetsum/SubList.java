@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 class Sublist implements Cloneable
 {
-    private int sum = 0;
+    private double sum = 0.0;
     private ArrayList<Double> originalObjects;
-    private ArrayList<Integer> indices;
+    public ArrayList<Integer> indices;
 
     // constructor creates an empty Sublist (no indices)
     public Sublist(ArrayList<Double> orig)
@@ -16,7 +16,7 @@ class Sublist implements Cloneable
         indices = new ArrayList<Integer>();
     }
 
-    int getSum()
+    double getSum()
     { return sum; }
 
     // I have done the clone() for you, since you will need clone() inside addItem().
