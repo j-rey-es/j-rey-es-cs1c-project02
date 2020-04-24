@@ -2,13 +2,23 @@ package subsetsum;
 
 import java.util.ArrayList;
 
+/**
+ * SubList provides a data structure and algorithm for SubsetSum and stores values as Doubles
+ *
+ * @author Joel R
+ */
+
 class Sublist implements Cloneable
 {
     private double sum = 0.0;
     private ArrayList<Double> originalObjects;
     public ArrayList<Integer> indices;
 
-    // constructor creates an empty Sublist (no indices)
+    /**
+     * Parameterized constructor for an object of class Sublist.
+     * Provides a data structure with supporting algorithms to calculate SubsetSum problem
+     * @param orig	The original data set
+     */
     public Sublist(ArrayList<Double> orig)
     {
         sum = 0;
@@ -16,10 +26,16 @@ class Sublist implements Cloneable
         indices = new ArrayList<Integer>();
     }
 
+    /**
+     * An Accessor for the sum of the Sublist
+     * @return sum The sum of the Sublist
+     */
     double getSum()
     { return sum; }
-
-    // I have done the clone() for you, since you will need clone() inside addItem().
+    /**
+     * Clone method for index copy
+     * @return A deep copy of the cloned object
+     */
     public Object clone() throws CloneNotSupportedException
     {
         // shallow copy
@@ -33,7 +49,12 @@ class Sublist implements Cloneable
 
         return newObject;
     }
-
+    /**
+     * Adds an item to the sublist given an index from the original data set
+     * Also recalculates sum of SubList
+     * @param indexOfItemToAdd	Index of item to be added from original data set
+     * @return addItem The Sublist that contains the new index and sum
+     */
     Sublist addItem( int indexOfItemToAdd)
     {
         Sublist subAdd = new Sublist(this.originalObjects);
@@ -49,7 +70,10 @@ class Sublist implements Cloneable
         return subAdd;
 
     }
-
+    /**
+     * Outputs the sublist as the original objects
+     *
+     */
     void showSublist()
     {
         for (int i = 0; i< indices.size(); i++)

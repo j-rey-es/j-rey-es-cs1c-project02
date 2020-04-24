@@ -1,8 +1,18 @@
 package subsetsum;
 
 import java.util.ArrayList;
-
+/**
+ * SubsetSum class find the highest set of Doubles given an ArrayList and limit
+ *
+ * @author Joel R
+ */
 public class SubsetSum {
+    /**
+     * Reads in a file and adds the prices into a list of the prices of groceries
+     * @param set	The ArrayList that contains all possible values
+     * @param limit The client defined upper limit of the set
+     * @return The highest possible ArrayList that is within the limit
+     */
     public static ArrayList<Double> findSubset(ArrayList<Double> set, double limit)
     {
         ArrayList<Sublist> col = new ArrayList<Sublist>();

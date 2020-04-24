@@ -2,8 +2,17 @@ package subsetsum;
 import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
-
+/**
+ * GroceriesFileReader class parses the prices given a CSV
+ * @author Joel R
+ */
 public class GroceriesFileReader {
+    /**
+     * readFile parses a CSV for prices in the second column
+     * @param filePath The CSV file that contains price data
+     * @return prices An ArrayList containing the prices
+     * @author Joel R
+     */
     public ArrayList<Double> readFile(String filePath)
     {
         ArrayList<Double> prices = new ArrayList<Double>();
