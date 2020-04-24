@@ -5,11 +5,11 @@ import java.util.ArrayList;
 class Sublist implements Cloneable
 {
     private int sum = 0;
-    private ArrayList<Integer> originalObjects;
+    private ArrayList<Double> originalObjects;
     private ArrayList<Integer> indices;
 
     // constructor creates an empty Sublist (no indices)
-    public Sublist(ArrayList<Integer> orig)
+    public Sublist(ArrayList<Double> orig)
     {
         sum = 0;
         originalObjects = orig;
@@ -35,8 +35,26 @@ class Sublist implements Cloneable
     }
 
     Sublist addItem( int indexOfItemToAdd)
-    { /* TBD */ }
+    {
+        Sublist subAdd = new Sublist(this.originalObjects);
+        try{
+            subAdd = (Sublist)this.clone();
+            subAdd.indices.add(indexOfItemToAdd); //adding new index to ArrayList
+            subAdd.sum += originalObjects.get(indexOfItemToAdd); //modifying the sum directly
+            return subAdd;
+        }
+        catch(CloneNotSupportedException ex){
+            System.err.println("Error cannot copy");
+        }
+        return subAdd;
+
+    }
 
     void showSublist()
-    { /* TBD */ }
+    {
+        for (int i = 0; i< indices.size(); i++)
+        {
+            System.out.println(originalObjects.get(indices.get(i)));
+        }
+    }
 };
