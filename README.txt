@@ -1,8 +1,22 @@
-// TODO: For every project create a README file at the top-level directory of 
-//       your project. Your README must include a list of .java files you are 
-//       submitting and a brief description of each. You may ignore IDE specific 
-//       files such as .gitignore 
+project folder: j-rey-es-cs1c-project02/
 
-// NOTE: Alternatively you can create this file in Markdown format. 
-//       See the tutorial:
-//       https://guides.github.com/features/mastering-markdown/
+
+Brief description of submitted files:
+
+src/subsetsum/ShoppingBag.java
+    - Includes main() for debugging.
+
+src/subsetsum/GroceryFilesReader.java
+    - Parses CSV file for prices
+
+src/subsetsum/SubsetSum.java
+    - Calculates the highest Sublist within limit
+
+resources/groceries.txt
+    - CSV file containing list of items and prices
+
+resources/RUN.txt
+    - console output of name from ShoppingBag.java
+
+README.txt
+    - description of submitted files

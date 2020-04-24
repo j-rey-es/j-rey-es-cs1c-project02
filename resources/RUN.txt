@@ -8,17 +8,44 @@ Groceries wanted:
 Enter your budget:
 0
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 944393 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 0 ms : 944200 ns
 Purchased grocery prices are:
-[2.5, 11.5, 6.0]
-Done with ShoppingBag.The list of groceries has 8 items.
+[]
+Done with ShoppingBag.
+-------------------------------------------------
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+2.50
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 299400 ns
+Purchased grocery prices are:
+[2.5]
+Done with ShoppingBag.
+---------------------------------------------------
+
+The list of groceries has 8 items.
 Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
 
 Enter your budget:
 58
 
-Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 944393 ns
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 440500 ns
 Purchased grocery prices are:
+[2.5, 4.0, 4.0, 11.5, 11.5, 11.5, 7.0, 7.0, 7.0, 7.0, 15.0, 15.0, 15.0, 15.0, 15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0]
+Done with ShoppingBag.
+----------------------------------------------------
+The list of groceries has 8 items.
+Groceries wanted:
 [2.5, 4.0, 11.5, 7.0, 15.0, 4.0, 6.0, 8.0]
+
+Enter your budget:
+1000
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 470700 ns
+Purchased grocery prices are:
+[2.5, 4.0, 4.0, 11.5, 11.5, 11.5, 7.0, 7.0, 7.0, 7.0, 15.0, 15.0, 15.0, 15.0, 15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0]
 Done with ShoppingBag.

@@ -14,22 +14,22 @@ public class SubsetSum {
         col.add(empty);
         for (int i = 0; i < set.size(); i++)
         {
-         for (int j = 0; j < col.size(); j++)
-         {
-             if(sumArrayList(col.get(j)) +set.get(i) < limit)
-             {
-                 lAdd = col.get(j);
-                 lAdd.add(set.get(i));
+            for (int j = 0; j < col.size(); j++)
+            {
+                if(sumArrayList(col.get(j)) +set.get(i) < limit)
+                {
+                    lAdd = col.get(j);
+                    lAdd.add(set.get(i));
 
-             }
-             if(sumArrayList(col.get(j)) +set.get(i) == limit)
-             {
-                 lAdd = col.get(j);
-                 lAdd.add(set.get(i));
-                 lPrime =lAdd;
-                 break;
-             }
-         }
+                }
+                if(sumArrayList(col.get(j)) +set.get(i) == limit)
+                {
+                    lAdd = col.get(j);
+                    lAdd.add(set.get(i));
+                    lPrime =lAdd;
+                    break;
+                }
+            }
             col.add(lAdd);
         }
         for (int k = 0; k<col.size(); k++)

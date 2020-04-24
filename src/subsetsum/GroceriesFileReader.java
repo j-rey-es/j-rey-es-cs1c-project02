@@ -22,7 +22,7 @@ public class GroceriesFileReader {
             }
             myFileIn.close();
         } catch (IOException e) {
-            //do nothing;
+            System.err.println("File is invalid");
         }
         return prices;
     }
