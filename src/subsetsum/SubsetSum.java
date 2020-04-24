@@ -3,7 +3,7 @@ package subsetsum;
 import java.util.ArrayList;
 
 public class SubsetSum {
-    public ArrayList<Double> findSubset(ArrayList<Double> set, double limit)
+    public static ArrayList<Double> findSubset(ArrayList<Double> set, double limit)
     {
         ArrayList<ArrayList<Double>> col = new ArrayList<ArrayList<Double>>();
         ArrayList<Double> empty = new ArrayList<Double>();
@@ -20,7 +20,7 @@ public class SubsetSum {
              {
                  lAdd = col.get(j);
                  lAdd.add(set.get(i));
-                 col.add(lAdd);
+
              }
              if(sumArrayList(col.get(j)) +set.get(i) == limit)
              {
@@ -30,6 +30,7 @@ public class SubsetSum {
                  break;
              }
          }
+            col.add(lAdd);
         }
         for (int k = 0; k<col.size(); k++)
         {
@@ -41,7 +42,7 @@ public class SubsetSum {
         }
         return col.get(largestIndex);
     }
-    public double sumArrayList(ArrayList<Double> set)
+    public static double sumArrayList(ArrayList<Double> set)
     {
         double sum = 0;
         for (int i = 0; i > set.size(); i++)
